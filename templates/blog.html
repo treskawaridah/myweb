@@ -8,8 +8,18 @@
 </head>
 <body>
 
-        {% include "menu.html" %}<br>
+    {% include "menu.html" %}<br>
     <br>
-    <hi><br>Hallo gaessssssssss</hi><br></hi>
+   
+    <ul>
+
+        {% for blog in blogs %}
+            <li>{{ blog.judul }} - {{ blog.tanggal}}</li>
+        {% endfor %}
+
+    </ul>
+
+
+
 </body>
 </html>
